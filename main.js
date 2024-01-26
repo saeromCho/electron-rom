@@ -6,7 +6,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     /// 페이지가 표시되기 전에 실행할 전처리 코드를 지정. 스크립트는 반드시 절대 경로로 전달해야한다.
-//     webPreferences: { preload: path.join(__dirname, 'preload.js') }
+    // 사전에 로드되야하는 라이브러리라고 한다.
      webPreferences: {
            preload: path.join(__dirname, 'preload.js')
          }
